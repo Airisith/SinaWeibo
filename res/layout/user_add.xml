@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+      <LinearLayout
+        android:id="@+id/addtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#3c3c3c"
+        android:orientation="horizontal">
+        <TextView
+	        android:id="@+id/add_leftView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:padding="5dp"
+	        android:textColor="#FFFFFF"
+	        android:textSize="15sp"
+	        android:text="取消"
+	        android:gravity="left" 
+	        android:layout_gravity="center"
+	        />
+         
+		<TextView
+	        android:id="@+id/title_add"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:padding="5dp"
+	        android:textColor="#FFFFFF"
+	        android:textSize="20sp"
+	        android:text="发微博"
+	        android:gravity="center" 
+	        android:layout_gravity="center"
+	        /> 
+	    <TextView
+	        android:id="@+id/add_rightView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:padding="5dp"
+	        android:textColor="#FFFFFF"
+	        android:textSize="15sp"
+	        android:text="发送"
+	        android:gravity="right" 
+	        android:layout_gravity="center"
+	        />        
+    </LinearLayout>
+    <EditText
+        android:id = "@+id/sendWeiboText"
+        android:layout_below="@id/addtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:id="@+id/add_buttomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/add_addimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/image"
+            />
+	</LinearLayout>
+        
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" 
+        android:background="#A8A8A8">
+
+    </LinearLayout>
+    <!-- 中间动态加载View -->
+
+    <RelativeLayout
+        android:id="@+id/containerBody"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:measureAllChildren="true" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#A8A8A8"
+        android:orientation="horizontal" >
+
+        <!-- 功能模块按钮1 -->
+
+        <ImageView
+            android:id="@+id/btnModuleHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/home" />
+        <!-- 功能模块按钮2 -->
+
+        <ImageView
+            android:id="@+id/btnModuleMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/message" />
+        <!-- 功能模块按钮3 -->
+
+        <ImageView
+            android:id="@+id/btnModuleAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/add" />
+        <!-- 功能模块按钮4 -->
+
+        <ImageView
+            android:id="@+id/btnModuleFind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/find" />
+        <!-- 功能模块按钮5 -->
+
+        <ImageView
+            android:id="@+id/btnModulePersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/personal" />
+    </LinearLayout>
+
+</LinearLayout>

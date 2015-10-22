@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.airisith.airisith"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.airisith.airisith.StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.airisith.oauth.OauthActivity"
+            android:label="授权" >
+        </activity>
+        <activity
+            android:name="com.airisith.airisith.HomeActivity"
+            android:label="WeiBo" >
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.airisith.Views.HomeView"
+            android:label="WeiBo" >
+        </activity>
+        <activity
+            android:name="com.airisith.Views.MsgView"
+            android:label="WeiBo" >
+        </activity>
+        <activity
+            android:name="com.airisith.Views.AddView"
+            android:label="WeiBo" >
+        </activity>
+        <activity
+            android:name="com.airisith.Views.FindView"
+            android:label="WeiBo" >
+        </activity>
+        <activity
+            android:name="com.airisith.Views.UserView"
+            android:label="WeiBo" >
+        </activity>
+        <activity
+            android:name="com.airisith.Views.WeiboInfoView"
+            android:label="WeiBo" >
+        </activity>
+        <activity
+            android:name="com.airisith.Views.SettingView"
+            android:label="WeiBo" >
+        </activity>
+        <activity
+            android:name="com.airisith.Views.OtherOfUserView"
+            android:label="WeiBo" >
+        </activity>
+
+        <receiver android:name="com.airisith.TokenAccessBroadcast" >
+            <intent-filter>
+                <action android:name="com.airisith.oauth" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+</manifest>

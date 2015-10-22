@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/findtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#3c3c3c"
+        android:orientation="horizontal">
+        <TextView
+	        android:id="@+id/find_leftView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:padding="5dp"
+	        android:textColor="#FFFFFF"
+	        android:textSize="15sp"
+	        android:text=""
+	        android:gravity="center" 
+	        android:layout_gravity="center"
+	        />
+         
+		<TextView
+	        android:id="@+id/title_find"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:padding="5dp"
+	        android:textColor="#FFFFFF"
+	        android:textSize="20sp"
+	        android:text="查找"
+	        android:gravity="center" 
+	        android:layout_gravity="center"
+	        /> 
+	    <TextView
+	        android:id="@+id/find_rightView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:padding="5dp"
+	        android:textColor="#FFFFFF"
+	        android:textSize="15sp"
+	        android:text="搜索"
+	        android:gravity="right" 
+	        android:layout_gravity="center"
+	        />        
+    </LinearLayout>
+    <EditText
+        android:id="@+id/findText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findtitle"
+        android:hint="无接口权限，功能无法实现"
+        />
+    
+    <LinearLayout
+        android:id="@+id/listlinearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+      <ListView
+          android:id="@+id/android:list"  
+          android:layout_width="fill_parent"    
+          android:layout_height="wrap_content"
+          android:drawSelectorOnTop="false"
+          android:scrollbars="vertical"
+          />
+        <!-- 使用 android内置ID -->
+        <!-- 选中时颜色不会显示在最上面，导致字被遮住 -->
+        <!-- 垂直滚动条 -->
+    </LinearLayout>
+</RelativeLayout>

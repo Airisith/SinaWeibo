@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/otherUser_TitleArea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 顶部背景图片 -->
+
+            <ImageView
+                android:id="@+id/otherUser_Back"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:src="@drawable/userbg" />
+            <!-- 标题栏 -->
+
+            <LinearLayout
+                android:id="@+id/otherUser_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/otherUserView_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="←"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/otherUserView_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/otherUserView_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="···"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!-- IMAGE上面的otherUser信息部分 -->
+
+            <RelativeLayout
+                android:id="@+id/otherUser_infoOfImageArea"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" >
+
+                <LinearLayout
+                    android:id="@+id/otherUserFollowLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/otherUser_follow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="关注"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/otherUser_followNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/otherUser_follower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="被关注"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/otherUser_followerNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+				<TextView
+				    android:id="@+id/otherUser_showText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/otherUserFollowLayout"
+                    android:layout_centerHorizontal="true"
+                    android:background="#00000000"
+                    android:text="签名档"
+                    android:textColor="#ADADAD"
+                    android:textSize="15sp"
+				    />
+                <TextView
+                    android:id="@+id/otherUser_nameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/otherUser_showText"
+                    android:layout_centerHorizontal="true"
+                    android:background="#00000000"
+                    android:text="昵称"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/otherUser_otherUser_Cap"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_above="@id/otherUser_nameText"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="20dp" />
+            </RelativeLayout>
+             <!-- 微博数 -->
+            <LinearLayout
+                android:id="@+id/otherUser_weoboNumLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:padding="5dp"
+                android:layout_below="@id/otherUser_infoOfImageArea"
+                 >
+                <TextView
+                    android:id="@+id/otherUser_weiboNumTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:text="微博:"
+                    />
+                
+            </LinearLayout>
+            <!-- 微博list -->
+            <ListView
+                android:id="@+id/android:list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otherUser_weoboNumLayout"
+                android:drawSelectorOnTop="false"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
